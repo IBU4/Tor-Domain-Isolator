@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tor Domain Isolator</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <h1>Tor Domain Isolator</h1>
+    <dl>
+      <dt>SOCKS</dt><dd id="socks">—</dd>
+      <dt>First party</dt><dd id="site">—</dd>
+      <dt>Cookie store</dt><dd id="store">—</dd>
+      <dt>Window</dt><dd id="privacy">—</dd>
+      <dt>Token</dt><dd id="token">—</dd>
+      <dt>Active buckets</dt><dd id="count">—</dd>
+      <dt>Unattributed</dt><dd id="unattributed">—</dd>
+      <dt>Routing errors</dt><dd id="errors">—</dd>
+    </dl>
+    <div class="buttons">
+      <button id="rotateCurrent" disabled>Reassign current domain</button>
+      <button id="rotateAll" class="secondary">Reset all</button>
+    </div>
+    <p id="message" role="status" aria-live="polite"></p>
+    <p id="privateWarning" hidden>Private-window access is disabled. Enable it in the add-on settings.</p>
+    <p class="hint">Tokens describe routing, not Tor connectivity or exit IP.</p>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
