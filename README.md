@@ -162,6 +162,7 @@ Tor-Domain-Isolator/
 ├── popup.js                                Diagnostics and rotation controls
 ├── icons/                                  Extension artwork
 ├── LICENSE                                 MIT License
+├── signing-public-key.asc                 Public OpenPGP signing key (not a secret key)
 ├── Description.txt                         Original short description
 ├── 457fde159e624aa98179-0.1.3.xpi        Signed Firefox installation package
 ├── 457fde159e624aa98179-0.1.3.xpi.asc    Detached OpenPGP signature for the XPI
@@ -185,12 +186,12 @@ The release includes **six detached OpenPGP signatures** for the XPI and five in
 C78D E843 9F25 11AB 00D6 AD43 62C7 004C 133C 9364
 ```
 
-**The signatures have not been independently cryptographically verified** without the corresponding public key. The fingerprint identifies the key claimed by the signatures; it does not, by itself, prove key ownership or signature validity. Mozilla XPI signing and the detached OpenPGP signatures are separate mechanisms.
+**PGP verification: PASSED (6/6, 2026-10-19).** The XPI and all five independently signed source files passed GnuPG 2.4.7 verification (`GOODSIG`, `VALIDSIG`, exit code `0`) against the author's supplied [public key](signing-public-key.asc). This confirms signature validity relative to that key; its real-world ownership and third-party trust certification are separate questions. Mozilla XPI signing and detached OpenPGP signatures are separate mechanisms.
 
-To verify after obtaining and authenticating the corresponding **public** key:
+To independently reproduce the verification, first authenticate the **public** key's fingerprint through a trusted source, then run:
 
 ```sh
-gpg --import public-key.asc
+gpg --import signing-public-key.asc
 gpg --verify background.js.asc background.js
 gpg --verify manifest.json.asc manifest.json
 gpg --verify popup.js.asc popup.js
