@@ -9,6 +9,7 @@
 **v0.1.3** · Firefox WebExtension (Manifest V2) · MIT License
 
 *Local by design · No telemetry · No remote code · No external runtime dependencies*
+
 *Tor Domain Isolator is an independent personal project. It is not developed, maintained or endorsed by the Tor Project or Mozilla.*
 
 </div>
