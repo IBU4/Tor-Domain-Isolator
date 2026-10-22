@@ -19,7 +19,7 @@
 ## Overview
 
 Tor Domain Isolator is a lightweight Firefox WebExtension that isolates Tor traffic by the **top-level website and Firefox browsing context**, rather than routing unrelated websites through the same SOCKS authentication identity.
-Developed as a personal project in order to provide Firefox advanced usage of Tor network similar to Tor browser.
+Developed as a personal project to bring Tor-style SOCKS stream isolation to Firefox.
 
 For each recognized first-party hostname, Firefox container and normal/private context, the extension assigns a **cryptographically random 128-bit token**. It sends that token as the SOCKS5 password to a locally running Tor service. With Tor's `IsolateSOCKSAuth` enabled, streams using different credentials cannot share the same circuit.
 
@@ -38,7 +38,7 @@ Multiple tabs using the same hostname, Firefox container and private/normal mode
 
 ### Tor configuration
 
-The Tor expert bundle can be downloaded from Tor project
+The Tor expert bundle can be downloaded from the Tor project
 - [Tor expert bundle](https://download.torproject.org/tor/)
 
 In the relevant Tor instance's `torrc`:
@@ -69,6 +69,14 @@ This XPI contains Mozilla add-on signing metadata. For Firefox desktop, use the 
 After installing, allow **Run in Private Windows** in the add-on settings when required, and reload existing tabs so subsequent network connections use the new routing logic.
 
 Extension will not auto update if installed manually
+
+## Using Tor Domain Isolator
+
+Using is rather simple. It has 2 buttons:
+- Reassign current domain = Assign new token to the current domain in a tab and reloads the tab
+- Reset all tokens. = Assigns new tokens to all domains in all tabs.  Manual tabs reload is required
+
+<img src="Interface.png" alt="Tor Domain Isolator interface" width="406" height="427" />
 
 ## Support and Disclaimer
 
