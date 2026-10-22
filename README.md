@@ -51,7 +51,7 @@ SocksPort 127.0.0.1:9050 IsolateSOCKSAuth
 For a dedicated Tor Firefox profile, configure Firefox's manual connection settings to use **SOCKS v5, `127.0.0.1:9050`**, with **Proxy DNS when using SOCKS v5** enabled. This provides an independent baseline if the add-on is unloaded. The extension adds *per-request credentials* to the browser's SOCKS routing; it does not configure the browser-wide manual proxy settings.
 
 On Android, the local Tor service (for example, a compatible Orbot SOCKS listener) must be reachable at the endpoint configured in the extension. Orbot has to be swiched from VPN to expert mode.
-- [Orbot for Android]((https://play.google.com/store/apps/details?id=org.torproject.android&hl=en-US)
+- [Orbot for Android](https://play.google.com/store/apps/details?id=org.torproject.android&hl=en-US)
 
 ## Installation
 
@@ -63,11 +63,21 @@ The supplied release archive contains:
 457fde159e624aa98179-0.1.3.xpi
 ```
 
-This XPI contains Mozilla add-on signing metadata. For Firefox desktop, use the browser's **Install Add-on From File** option with the XPI, subject to the browser's normal signing and compatibility checks. Installation on Firefox for Android is available by enabling secret options.
+This XPI contains Mozilla add-on signing metadata. For Firefox desktop, use the browser's **Install Add-on From File** option with the XPI, subject to the browser's normal signing and compatibility checks. Installation on Firefox for Android is available by enabling secret options and selecting installation from file.
 
 After installing, allow **Run in Private Windows** in the add-on settings when required, and reload existing tabs so subsequent network connections use the new routing logic.
 
 Extension will not auto update if installed manually
+
+## Support and Disclaimer
+
+Tor Domain Isolator is an independent personal project, provided free of charge and as-is.
+
+No technical support, installation assistance, troubleshooting, maintenance, or future updates are promised.
+
+Users are responsible for configuring their own Firefox and Tor environments and verifying that the extension operates as intended.
+
+This project is not affiliated with, maintained by, or endorsed by the Tor Project or Mozilla.
 
 ## License
 
