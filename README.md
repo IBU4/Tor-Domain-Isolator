@@ -57,8 +57,8 @@ On Android, the local Tor service (for example, a compatible Orbot SOCKS listene
 ## Installation
 
 From Mozilla add-ons:
-- [Tor Domain Isolator](https://addons.mozilla.org/…/457fde159e624aa98179 )
-
+- [Tor Domain Isolator – Mozilla Add-ons](https://addons.mozilla.org/firefox/addon/tor-domain-isolator/)
+- 
 ### Signed XPI package
 
 This XPI contains Mozilla add-on signing metadata. For Firefox desktop, use the browser's **Install Add-on From File** option with the XPI, subject to the browser's normal signing and compatibility checks. Installation on Firefox for Android is available by enabling secret options and selecting installation from file.
