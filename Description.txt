@@ -1,3 +1,0 @@
-Per-first-party SOCKS isolation tokens for Firefox + Tor Expert Bundle. Personal local use only.
-
-Local Tor stream-isolation extension. Routes Firefox requests exclusively through a local Tor SOCKS5 proxy at 127.0.0.1:9050 and assigns per-first-party SOCKS authentication tokens for Tor IsolateSOCKSAuth. No telemetry, remote code, data collection, or external dependencies.
