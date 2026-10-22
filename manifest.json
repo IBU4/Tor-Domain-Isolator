@@ -4,7 +4,7 @@
   "version": "0.1.4",
   "description": "Isolates Tor SOCKS5 streams by first-party hostname, Firefox container, and normal/private browsing context. Requires a local Tor service.",
   "developer": {
-    "name": "Ivan Bukvic"
+    "name": "Ivan Bukvic",
     "url": "https://github.com/IBU4/Tor-Domain-Isolator"
   },
   "icons": {
