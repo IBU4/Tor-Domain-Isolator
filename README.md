@@ -6,7 +6,7 @@
 
 **First-party SOCKS5 stream isolation for Firefox and a local Tor service**
 
-**v0.1.3** · Firefox WebExtension (Manifest V2) · MIT License
+**v0.1.4** · Firefox WebExtension (Manifest V2) · MIT License
 
 *Local by design · No telemetry · No remote code*
 
