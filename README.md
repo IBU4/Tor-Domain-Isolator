@@ -42,7 +42,8 @@ The test produced:
 - visitorFound: false in both API responses
 
 These results reflect the tested browser
-configuration and do not guarantee anonymity with extension only.
+configuration and do not guarantee anonymity with this extension only.
+During this test 3 more extensions were active: Dark reader, NoScript and uBO. Linking failed anyway.
 
 ![Parallel Fingerprint test](FingerprintPro.png)
 
