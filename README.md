@@ -12,6 +12,8 @@
 
 *Tor Domain Isolator is an independent personal project. It is not developed, maintained or endorsed by the Tor Project or Mozilla.*
 
+*FAQ — see [`FAQ`](FAQ.md).*
+
 </div>
 
 ---
