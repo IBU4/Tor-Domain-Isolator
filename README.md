@@ -31,6 +31,21 @@ It is designed to work alongside the Tor daemon. The connection will stop if Tor
 
 Multiple tabs using the same hostname, Firefox container and private/normal mode share one token. Different groups receive different tokens. **An isolation group is not one permanently assigned Tor circuit**: Tor may create or replace circuits, and distinct groups may still happen to use the same exit IP.
 
+## Experimental Observation
+
+Two simultaneous Fingerprint identifications
+within a single Firefox instance in 2 containers.
+
+The test produced:
+- Two different Visitor IDs
+- Two different Tor exit IP addresses
+- visitorFound: false in both API responses
+
+These results reflect the tested browser
+configuration and do not guarantee anonymity with extension only.
+
+![Parallel Fingerprint test](FingerprintPro.png)
+
 ## Requirements
 
 - **Firefox desktop 140.0+** or **Firefox for Android 142.0+**, as declared by the supplied manifest.
