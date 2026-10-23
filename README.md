@@ -51,6 +51,8 @@ SocksPort 127.0.0.1:9050 IsolateSOCKSAuth
 
 For a dedicated Tor Firefox profile, configure Firefox's manual connection settings to use **SOCKS v5, `127.0.0.1:9050`**, with **Proxy DNS when using SOCKS v5** enabled. This provides an independent baseline if the add-on is unloaded. The extension adds *per-request credentials* to the browser's SOCKS routing; it does not configure the browser-wide manual proxy settings.
 
+### Firefox Android
+
 On Android, the local Tor service (for example, a compatible Orbot SOCKS listener) must be reachable at the endpoint configured in the extension. Orbot has to be switched from VPN to power user mode.
 - [Orbot for Android](https://play.google.com/store/apps/details?id=org.torproject.android&hl=en-US)
 
