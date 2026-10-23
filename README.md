@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="icons/tor-domain-isolator-96.svg" alt="Tor Domain Isolator icon" width="96" height="96" />
+<img src="Icon.png" alt="Tor Domain Isolator icon" width="128" height="128" />
 
 # Tor Domain Isolator
 
